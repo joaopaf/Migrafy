@@ -75,6 +75,8 @@ produto2 = Produto("Croissant", "0.5", "0.3", "2016-12-30")
 stock = [Stock(produto1, "20"), Stock(produto2, "49")]
 morada1 = Morada("4710-057", "Campus de Gualtar", "Campus de Guatar", "", "Portugal", "Braga", "Braga")
 maquina1 = Maquina("CP1 no segundo Piso", "A", "200", "300", morada1, stock)
+utilizador = Utilizador("andreiabarros@gmail.com", "4321", "10.00", "Andreia Barros", "Estudante", "F", "1995-10-01", venda)
+venda = [Venda("2016-11-28 00:00:00", "0.80", "0.50", maquina1, produto1)]
 
 
 
