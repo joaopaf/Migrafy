@@ -30,12 +30,12 @@ class Morada:
 
 class Venda:
 
-    def __init__(self, Data, PrecoV, PrecoA, Produto, Maquina):
+    def __init__(self, Data, PrecoV, PrecoA, Produto, idMaquina):
         self.Data = Data
         self.PrecoV = PrecoV
         self.PrecoA = PrecoA
         self.Produto = Produto
-        self.Maquina = Maquina
+        self.idMaquina = idMaquina
         
 class Utilizador:
 
@@ -110,13 +110,13 @@ def extracaoStockIdMaquina(db, idMaquina):
     # Fetch all the rows in a list of lists.
     results = cursor.fetchall()
     for row in results:
+        idRemessa = str(row[0])
         validade = str(row[1])
         quantidade = str(row[2])
         idProduto = str(row[4])
 
         # Create Produto object
-        produto = extracaoProdutoIdSemValidade(db, idProduto)
-        produto.validade = validade
+        produto = extracaoProdutoRemessaId(db, idRemessa) 
 
         # Create stock object
         stock = Stock(produto, quantidade)
@@ -125,12 +125,12 @@ def extracaoStockIdMaquina(db, idMaquina):
         
     return lStock
 
-def extracaoProdutoIdSemValidade(db, idProduto):
+def extracaoProdutoRemessaId(db, idRemessa):
     # prepare a cursor object using cursor() method
     cursor = db.cursor()
 
     # Prepare SQL query to INSERT a record into the database.
-    sql = "SELECT * FROM Produto WHERE id = " + str(idProduto)
+    sql = "SELECT Produto.Nome, Produto.PrecoV, Produto.PrecoA, Remessa.Validade FROM Produto JOIN Remessa ON Remessa.Produto=Produto.id WHERE Remessa.id=" + str(idRemessa)
 
     # Execute the SQL command
     cursor.execute(sql)
@@ -138,12 +138,12 @@ def extracaoProdutoIdSemValidade(db, idProduto):
     # Fetch all the rows in a list of lists.
     row = cursor.fetchone()
 
-    nome = row[1]
-    precoV = str(row[2])
-    precoA = str(row[3])
-    
-    # Get morada
-    produto = Produto(nome, precoV, precoA, "")
+    nome = row[0]
+    precoV = str(row[1])
+    precoA = str(row[2])
+    validade = str(row[3])
+
+    produto = Produto(nome, precoV, precoA, validade)
     
     return produto
 
@@ -181,6 +181,91 @@ def extracaoMaquinas(db):
 
     return lMaquinas
 
+def extracaoIdMaquinaRemessaId(db, idRemessa):
+    # prepare a cursor object using cursor() method
+    cursor = db.cursor()
+
+    # Prepare SQL query to INSERT a record into the database.
+    sql = "SELECT * FROM Remessa WHERE id = " + str(idRemessa)
+
+    # Execute the SQL command
+    cursor.execute(sql)
+
+    # Fetch all the rows in a list of lists.
+    row = cursor.fetchone()
+
+    return str(row[3])
+
+
+
+def extracaoVendasUtilizadorId(db, idUtilizador):
+    lVendas = []
+
+    # prepare a cursor object using cursor() method
+    cursor = db.cursor()
+
+    # Prepare SQL query to INSERT a record into the database.
+    sql = "SELECT * FROM Venda WHERE Utilizador = " + str(idUtilizador)
+
+    # Execute the SQL command
+    cursor.execute(sql)
+
+    # Fetch all the rows in a list of lists.
+    results = cursor.fetchall()
+    for row in results:
+        data = str(row[1])
+        precov = str(row[2])
+        precoa = str(row[3])
+        idRemessa = str(row[5])
+
+        # Create Produto object
+        produto = extracaoProdutoRemessaId(db, idRemessa)
+
+        # Get Maquina id
+        idMaquina = extracaoIdMaquinaRemessaId(db, idRemessa)
+
+        # Create venda object
+        venda = Venda(data, precov, precoa, produto, idMaquina)
+
+        lVendas.append(venda)
+        
+    return lVendas
+
+def extracaoUtilizadores(db):
+    lUtilizadores = []
+
+    # prepare a cursor object using cursor() method
+    cursor = db.cursor()
+
+    # Prepare SQL query to INSERT a record into the database.
+    sql = "SELECT * FROM Utilizador"
+
+    # Execute the SQL command
+    cursor.execute(sql)
+
+    # Fetch all the rows in a list of lists.
+    results = cursor.fetchall()
+    for row in results:
+        # Get Atributes
+        idUtilizador = row[0]
+        email = row[1]
+        password = row[2]
+        saldo = str(row[3])
+        nome = row[4]
+        profissao = row[5]
+        genero = row[6]
+        dataNascimento = str(row[7])
+
+        # Get vendas
+        vendas = extracaoVendasUtilizadorId(db, idUtilizador)
+        # Get stock
+        utilizador = Utilizador(email, password, saldo, nome, profissao, genero, dataNascimento, vendas)
+
+        # Now print fetched result
+        lUtilizadores.append(utilizador)
+
+    return lUtilizadores
+
 
 # Open database connection
 db = MySQLdb.connect("localhost","root","password","mydb")
@@ -188,6 +273,10 @@ db = MySQLdb.connect("localhost","root","password","mydb")
 # Funcao que extrai as maquinas da db
 lMaquinas = extracaoMaquinas(db)
 print (json.dumps(lMaquinas, cls=MyEncoder, indent=4, ensure_ascii=False, encoding='latin-1').encode('utf-8'))
+
+# Funcao que extrai os utilizadiores da db
+lUtilizadores = extracaoUtilizadores(db)
+print (json.dumps(lUtilizadores, cls=MyEncoder, indent=4, ensure_ascii=False, encoding='latin-1').encode('utf-8'))
 
 # disconnect from server
 db.close()
