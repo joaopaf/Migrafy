@@ -271,8 +271,8 @@ def extracaoUtilizadores(db):
 db = MySQLdb.connect("localhost","root","password","mydb")
 
 # Funcao que extrai as maquinas da db
-lMaquinas = extracaoMaquinas(db)
-print (json.dumps(lMaquinas, cls=MyEncoder, indent=4, ensure_ascii=False, encoding='latin-1').encode('utf-8'))
+# lMaquinas = extracaoMaquinas(db)
+# print (json.dumps(lMaquinas, cls=MyEncoder, indent=4, ensure_ascii=False, encoding='latin-1').encode('utf-8'))
 
 # Funcao que extrai os utilizadiores da db
 lUtilizadores = extracaoUtilizadores(db)

@@ -1,0 +1,35 @@
+[
+	{
+        "renda": "400.00", 
+        "morada": {
+            "Freguesia": "Bétera", 
+            "Rua": "Reiseñor 44", 
+            "Porta": 332, 
+            "Pais": "Espanha", 
+            "Distrito": "Valencia", 
+            "Cidade": "Bétera", 
+            "Cod_Postal": "46117"
+        }, 
+        "idMaquina": 6, 
+        "modelo": "B2", 
+        "capacidade": "450", 
+        "descricao": "Ala Norte"
+    },
+	{
+        "renda": "120.00", 
+        "morada": {
+            "Freguesia": "Salvaterra de Miño", 
+            "Rua": "Puerta Nueva 20", 
+            "Porta": 123, 
+            "Pais": "Espanha", 
+            "Distrito": "Pontevedra", 
+            "Cidade": "Salvaterra de Miño", 
+            "Cod_Postal": "36450"
+        }, 
+        "idMaquina": 3, 
+        "modelo": "B", 
+        "capacidade": "400", 
+        "descricao": "Logo na entrada"
+    }
+
+]

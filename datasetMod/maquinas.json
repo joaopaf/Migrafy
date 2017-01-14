@@ -1,0 +1,263 @@
+[
+    {
+        "renda": "255.00", 
+        "morada": {
+            "Freguesia": "Villabuena del Puente", 
+            "Rua": "Bellavista 13", 
+            "Porta": 129, 
+            "Pais": "Espanha", 
+            "Distrito": "Zamora", 
+            "Cidade": "Villabuena del Puente", 
+            "Cod_Postal": "49820"
+        }, 
+        "idMaquina": 1, 
+        "modelo": "A", 
+        "capacidade": "300", 
+        "descricao": "A Maquina encontra-se no 3º piso do prédio", 
+        "stock": [
+            {
+                "Quantidade": "18", 
+                "Produto": {
+                    "Validade": "2017-02-01", 
+                    "PrecoV": "0.80", 
+                    "PrecoA": "0.50", 
+                    "Nome": "Lanche"
+                }
+            }, 
+            {
+                "Quantidade": "7", 
+                "Produto": {
+                    "Validade": "2017-01-29", 
+                    "PrecoV": "0.50", 
+                    "PrecoA": "0.30", 
+                    "Nome": "Croissant"
+                }
+            }
+        ]
+    }, 
+    {
+        "renda": "285.00", 
+        "morada": {
+            "Freguesia": "Onil", 
+            "Rua": "C/ Fernández de Leceta 29", 
+            "Porta": 662, 
+            "Pais": "Espanha", 
+            "Distrito": "Alicante", 
+            "Cidade": "Onil", 
+            "Cod_Postal": "03430"
+        }, 
+        "idMaquina": 2, 
+        "modelo": "A", 
+        "capacidade": "300", 
+        "descricao": "Encontra-se encontada à parede azul por baixo das escadas", 
+        "stock": [
+            {
+                "Quantidade": "28", 
+                "Produto": {
+                    "Validade": "2017-02-01", 
+                    "PrecoV": "0.80", 
+                    "PrecoA": "0.50", 
+                    "Nome": "Lanche"
+                }
+            }, 
+            {
+                "Quantidade": "8", 
+                "Produto": {
+                    "Validade": "2017-12-10", 
+                    "PrecoV": "0.70", 
+                    "PrecoA": "0.40", 
+                    "Nome": "Kinder Bueno"
+                }
+            }, 
+            {
+                "Quantidade": "3", 
+                "Produto": {
+                    "Validade": "2019-12-20", 
+                    "PrecoV": "0.60", 
+                    "PrecoA": "0.10", 
+                    "Nome": "Agua"
+                }
+            }
+        ]
+    }, 
+    {
+        "renda": "120.00", 
+        "morada": {
+            "Freguesia": "Salvaterra de Miño", 
+            "Rua": "Puerta Nueva 20", 
+            "Porta": 123, 
+            "Pais": "Espanha", 
+            "Distrito": "Pontevedra", 
+            "Cidade": "Salvaterra de Miño", 
+            "Cod_Postal": "36450"
+        }, 
+        "idMaquina": 3, 
+        "modelo": "B", 
+        "capacidade": "400", 
+        "descricao": "Logo na entrada", 
+        "stock": [
+            {
+                "Quantidade": "2", 
+                "Produto": {
+                    "Validade": "2018-01-05", 
+                    "PrecoV": "1.00", 
+                    "PrecoA": "0.80", 
+                    "Nome": "Ice Tea"
+                }
+            }, 
+            {
+                "Quantidade": "10", 
+                "Produto": {
+                    "Validade": "2017-01-29", 
+                    "PrecoV": "0.50", 
+                    "PrecoA": "0.30", 
+                    "Nome": "Croissant"
+                }
+            }
+        ]
+    }, 
+    {
+        "renda": "250.00", 
+        "morada": {
+            "Freguesia": "Mugardos", 
+            "Rua": "Plaza de España 32", 
+            "Porta": 80, 
+            "Pais": "Espanha", 
+            "Distrito": "A Coruña", 
+            "Cidade": "Mugardos", 
+            "Cod_Postal": "15620"
+        }, 
+        "idMaquina": 4, 
+        "modelo": "B", 
+        "capacidade": "400", 
+        "descricao": "Encontra-se mesmo à entrada do edifício", 
+        "stock": [
+            {
+                "Quantidade": "2",
+                "Produto": {
+                    "Validade": "2017-12-10", 
+                    "PrecoV": "0.70", 
+                    "PrecoA": "0.40", 
+                    "Nome": "Kinder Bueno"
+                }
+            }, 
+            {
+                "Quantidade": "12", 
+                "Produto": {
+                    "Validade": "2017-01-23", 
+                    "PrecoV": "1.00", 
+                    "PrecoA": "0.70", 
+                    "Nome": "Bolacha Chocolate"
+                }
+            }
+        ]
+    }, 
+    {
+        "renda": "230.00", 
+        "morada": {
+            "Freguesia": "Huesca", 
+            "Rua": "Cañadilla 92", 
+            "Porta": 849, 
+            "Pais": "Espanha", 
+            "Distrito": "Huesca", 
+            "Cidade": "Huesca", 
+            "Cod_Postal": "22000"
+        }, 
+        "idMaquina": 5, 
+        "modelo": "A1", 
+        "capacidade": "450", 
+        "descricao": "Último andar", 
+        "stock": [
+            {
+                "Quantidade": "14", 
+                "Produto": {
+                    "Validade": "2018-01-02", 
+                    "PrecoV": "0.80", 
+                    "PrecoA": "0.50", 
+                    "Nome": "Coca Cola"
+                }
+            }, 
+            {
+                "Quantidade": "22", 
+                "Produto": {
+                    "Validade": "2017-02-01", 
+                    "PrecoV": "0.80", 
+                    "PrecoA": "0.50", 
+                    "Nome": "Lanche"
+                }
+            }
+        ]
+    }, 
+    {
+        "renda": "400.00", 
+        "morada": {
+            "Freguesia": "Bétera", 
+            "Rua": "Reiseñor 44", 
+            "Porta": 332, 
+            "Pais": "Espanha", 
+            "Distrito": "Valencia", 
+            "Cidade": "Bétera", 
+            "Cod_Postal": "46117"
+        }, 
+        "idMaquina": 6, 
+        "modelo": "B2", 
+        "capacidade": "450", 
+        "descricao": "Ala Norte", 
+        "stock": [
+            {
+                "Quantidade": "12", 
+                "Produto": {
+                    "Validade": "2017-01-05", 
+                    "PrecoV": "0.40", 
+                    "PrecoA": "0.20", 
+                    "Nome": "Bolacha Maria"
+                }
+            }, 
+            {
+                "Quantidade": "21", 
+                "Produto": {
+                    "Validade": "2017-01-29", 
+                    "PrecoV": "0.50", 
+                    "PrecoA": "0.30", 
+                    "Nome": "Croissant"
+                }
+            }
+        ]
+    }, 
+    {
+        "renda": "380.00", 
+        "morada": {
+            "Freguesia": "Santa Ana la Real", 
+            "Rua": "Prolongacion San Sebastian 79", 
+            "Porta": 563, 
+            "Pais": "Espanha", 
+            "Distrito": "Huelva", 
+            "Cidade": "Santa Ana la Real", 
+            "Cod_Postal": "21359"
+        }, 
+        "idMaquina": 7, 
+        "modelo": "C", 
+        "capacidade": "250", 
+        "descricao": "Recepção do Edifício", 
+        "stock": [
+            {
+                "Quantidade": "4", 
+                "Produto": {
+                    "Validade": "2018-01-05", 
+                    "PrecoV": "0.55", 
+                    "PrecoA": "0.30", 
+                    "Nome": "Kit Kat"
+                }
+            }, 
+            {
+                "Quantidade": "8", 
+                "Produto": {
+                    "Validade": "2017-02-01", 
+                    "PrecoV": "0.80", 
+                    "PrecoA": "0.50", 
+                    "Nome": "Lanche"
+                }
+            }
+        ]
+    }
+]
