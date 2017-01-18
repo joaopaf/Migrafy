@@ -1,18 +1,35 @@
 [
-		{
-			
-			"Genero": "M", 
-			"Nome": "Heródoto E Vergara", 
-			"Profissao": "Sapateiro", 
-			"Data_Nascimento": "1976-05-15", 
-			"Email": "herodotovergara@gmail.com"
-		},
-		{
-			"Genero": "M", 
-			"Nome": "Cenobio E Casillas", 
-			"Profissao": "Professor", 
-			"Data_Nascimento": "1973-10-28", 
-			"Email": "cenobiocasillas@hotmail.com"
-		}
-
+	{
+        "Genero": "M", 
+        "Nome": "Heródoto E Vergara", 
+        "Profissao": "Engenheiro Civil", 
+        "Data_Nascimento": "1976-05-15", 
+        "Saldo": 0.20, 
+        "Password": "1234", 
+        "Email": "herodotovergara@gmail.com",
+		"Op": "U",
+		"DataOp": "2017-02-15 10:14:15"
+    }, 
+    {
+        "Genero": "F", 
+        "Nome": "Generosa V Tamez", 
+        "Profissao": "Desempregado", 
+        "Data_Nascimento": "1962-04-19", 
+        "Saldo": 14.30, 
+        "Password": "2345", 
+        "Email": "generosatamez@gmail.com",
+		"Op": "U",
+		"DataOp": "2017-02-14 12:15:25"
+    },
+	{
+        "Genero": "M", 
+        "Nome": "Natzari I Almaraz", 
+        "Profissao": "Estudante", 
+        "Data_Nascimento": "1967-01-18", 
+        "Saldo": 5.68, 
+        "Password": "999", 
+        "Email": "natzarialmaraz@hotmail.com",
+		"Op": "I",
+		"DataOp": "2017-04-16 22:25:35"
+    }
 ]

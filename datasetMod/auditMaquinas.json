@@ -1,35 +1,20 @@
 [
-	{
-        "renda": "400.00", 
+    {
+        "renda": 350.00, 
         "morada": {
-            "Freguesia": "Bétera", 
-            "Rua": "Reiseñor 44", 
-            "Porta": 332, 
+            "Freguesia": "Herguijuela de la Sierra", 
+            "Rua": "Socampo 24", 
+            "Porta": "81", 
             "Pais": "Espanha", 
-            "Distrito": "Valencia", 
-            "Cidade": "Bétera", 
-            "Cod_Postal": "46117"
+            "Distrito": "Salamanca", 
+            "Cidade": "Herguijuela de la Sierra", 
+            "Cod_Postal": "37619"
         }, 
-        "idMaquina": 6, 
-        "modelo": "B2", 
-        "capacidade": "450", 
-        "descricao": "Ala Norte"
-    },
-	{
-        "renda": "120.00", 
-        "morada": {
-            "Freguesia": "Salvaterra de Miño", 
-            "Rua": "Puerta Nueva 20", 
-            "Porta": 123, 
-            "Pais": "Espanha", 
-            "Distrito": "Pontevedra", 
-            "Cidade": "Salvaterra de Miño", 
-            "Cod_Postal": "36450"
-        }, 
-        "idMaquina": 3, 
+        "idMaquina": 4, 
         "modelo": "B", 
-        "capacidade": "400", 
-        "descricao": "Logo na entrada"
+        "capacidade": 400, 
+        "descricao": "Novas instalação do centro comercial", 
+        "Op": "U",
+        "DataOp": "2017-04-16 22:25:35"
     }
-
 ]

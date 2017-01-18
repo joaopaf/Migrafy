@@ -1,21 +1,26 @@
 [
 	{
-		"Venda": [
-			{
-				"Produto": {
-					"Validade": "2017-02-01", 
-					"PrecoV": "0.80", 
-					"PrecoA": "0.50", 
-					"Nome": "Lanche"
-				}
-			}
-		], 
-		"Genero": "M", 
-		"Nome": "Heródoto E Vergara", 
-		"Profissao": "Sapateiro", 
-		"Data_Nascimento": "1976-05-15", 
-		"Saldo": "0.20", 
-		"Password": "1234", 
-		"Email": "herodotovergara@gmail.com"
-	}
+        "Venda": [
+            {
+                "Produto": {
+                    "Validade": "2016-01-05", 
+                    "PrecoV": 0.70, 
+                    "PrecoA": 0.40, 
+                    "Nome": "Kinder Bueno"
+                }, 
+                "Data": "2016-02-23 14:55:16", 
+                "idMaquina": "4"
+            }
+        ], 
+        "Genero": "M", 
+        "Nome": "Incul A Prado", 
+        "Profissao": "Estudante", 
+        "Data_Nascimento": "1960-06-30", 
+        "Saldo": 5.00, 
+        "Password": "0987", 
+        "Email": "inculprado@hotmail.com",
+		"Op": "I",
+		"DataOp": "2016-02-23 14:55:16"
+
+    }
 ]
