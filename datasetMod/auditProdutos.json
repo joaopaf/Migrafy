@@ -1,0 +1,16 @@
+[	
+	 {
+		"PrecoV": 0.80, 
+		"PrecoA": 0.50, 
+		"Nome": "Gelatina",
+		"Op": "I",
+		"DataOp": "2017-01-13 10:00:14"
+    },
+	{
+		"PrecoV": 1.05, 
+		"PrecoA": 0.80, 
+		"Nome": "Ice Tea",
+		"Op": "U",
+		"DataOp": "2017-01-13 10:00:35"
+    }
+ ]
