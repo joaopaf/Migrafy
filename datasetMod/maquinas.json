@@ -21,15 +21,6 @@
                     "Validade": "2017-02-02", 
                     "PrecoV": 0.80, 
                     "PrecoA": 0.50, 
-                    "Nome": "Gelatina"
-                }
-            },
-            {
-                "Quantidade": 18, 
-                "Produto": {
-                    "Validade": "2017-02-02", 
-                    "PrecoV": 0.80, 
-                    "PrecoA": 0.50, 
                     "Nome": "Lanche"
                 }
             }, 
@@ -126,6 +117,7 @@
         ]
     }, 
     {
+
         "renda": 350.00, 
         "morada": {
             "Freguesia": "Herguijuela de la Sierra", 
@@ -141,6 +133,15 @@
         "capacidade": 400, 
         "descricao": "Novas instalação do centro comercial", 
         "stock": [
+            {
+                "Quantidade": 20,
+                "Produto":{
+                    "Validade": "2017-12-10", 
+                    "PrecoV": 0.80, 
+                    "PrecoA": 0.50, 
+                    "Nome": "Gelatina"
+                }
+            },
             {
                 "Quantidade": 2,
                 "Produto": {

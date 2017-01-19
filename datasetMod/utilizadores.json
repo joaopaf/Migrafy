@@ -1,5 +1,15 @@
 [
     {
+        "Venda":[],
+        "Genero": "M", 
+        "Nome": "Natzari I Almaraz", 
+        "Profissao": "Estudante", 
+        "Data_Nascimento": "1967-01-18", 
+        "Saldo": 5.68, 
+        "Password": "999", 
+        "Email": "natzarialmaraz@hotmail.com"
+    },
+    {
         "Venda": [
             {
                 "Produto": {
